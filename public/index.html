@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../src/output.css" rel="stylesheet">
+    
+</head>
+<body class="bg-black">
+    
+<nav class="bg-white h-20">
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img src="../image/unnamed.png" alt="Logo" class="h-6 p-3">
+        </div>
+
+        <!-- Navbar Links (Hidden on Small Screens) -->
+        <div class="hidden md:flex space-x-4">
+          <ul class="flex justify-between items-center py-2 px-4 mt-2 sm:mt-0">
+            <li class="mr-3">
+              <a href="/" class="text-gray-800 hover:text-gray-900">หน้าหลัก</a>
+            </li>
+            <li class="mr-3">
+              <a href="/projects" class="text-gray-800 hover:text-gray-900">โครงการ</a>
+            </li>
+            
+            <div class="relative">
+              <li class="mr-3">
+                  <a href="/work-formats" class="text-gray-800 hover:text-gray-900">รูปแบบผลงานและรายละเอียด</a>
+  
+                  <!-- Dropdown Content -->
+                  <ul id="dropdown-menu" class="absolute hidden mt-2 bg-white border rounded-md shadow-md">
+                      <li><a href="/work-format-1" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">ตัวเลือกที่ 1</a></li>
+                      <li><a href="/work-format-2" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">ตัวเลือกที่ 2</a></li>
+                      <li><a href="/work-format-3" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">ตัวเลือกที่ 3</a></li>
+                  </ul>
+              </li>
+          </div>
+          <li class="mr-3">
+            <a href="/register" class="text-gray-800 hover:text-gray-900">ลงทะเบียนส่งผลงาน</a>
+          </li>
+          <li class="mr-3">
+            <a href="/results" class="text-gray-800 hover:text-gray-900">ประกาศรายชื่อผู้ได้รับคัดเลือก</a>
+          </li>
+          <li class="mr-3">
+            <a href="/creative-works" class="text-gray-800 hover:text-gray-900">ผลงานสร้างสรรค์</a>
+          </li>
+          <li class="mr-3">
+            <a href="/contact" class="text-gray-800 hover:text-gray-900">ติดต่อสอบถาม</a>
+          </li>
+        </ul>
+      </div>
+
+          
+
+        <!-- Burger Icon (Visible on Small Screens) -->
+        <button id="burger-icon" class="md:hidden">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+      </button>
+  </div>
+
+
+<!-- Mobile Navbar (Hidden on Large Screens) -->
+<div id="mobile-menu" class="md:hidden bg-gray-800 text-black p-4 hidden">
+    <a href="#" class="block py-2 hover:text-gray-300">หน้าหลัก</a>
+    <a href="#" class="block py-2 hover:text-gray-300">โครงการ</a>
+    <div class="relative">
+      <a href="#" class="block py-2 hover:text-gray-300">รูปแบบผลงาน</a>
+      <!-- Mobile Dropdown Content -->
+      <ul id="mobile-dropdown-menu" class="absolute hidden bg-white border rounded-md shadow-md">
+          <li><a href="/work-format-1" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">ตัวเลือกที่ 1</a></li>
+          <li><a href="/work-format-2" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">ตัวเลือกที่ 2</a></li>
+          <li><a href="/work-format-3" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">ตัวเลือกที่ 3</a></li>
+      </ul>
+  </div>
+
+    <a href="#" class="block py-2 hover:text-gray-300">รายละเอียดการ</a>
+    <a href="#" class="block py-2 hover:text-gray-300">ลงทะเบียนส่งผลงาน</a>
+    <a href="#" class="block py-2 hover:text-gray-300">ประกาศรายชื่อผู้ได้รับคัดเลือก</a>
+    <a href="#" class="block py-2 hover:text-gray-300">ผลงานสร้างสรรค์</a>
+    <a href="#" class="block py-2 hover:text-gray-300">ติดต่อสอบถาม</a>
+</div>
+</nav>
+
+<script src="./script.js"></script>
+</body>
+</html>
